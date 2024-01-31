@@ -208,6 +208,89 @@ body {
     left: 81.5%;
 }
 
+.door {
+    height: 6.5%;
+    width: 2%;
+    top: 83.95%;
+    left: 75.5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.door-1 {
+    height: 90%;
+    width: 85%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.door-window-1 {
+    height: 42.5%;
+    width: 80%;
+    top: 2.5%;
+}
+
+.door-handle {
+    height: 6.5%;
+    width: 10%;
+    border-radius: 50%;
+    right: 40%;
+    background-color: goldenrod;
+    box-shadow: inset 0px 0px 1px 0 black;
+}
+
+.door-window-2 {
+    height: 42.5%;
+    width: 80%;
+    bottom: 2.5%;
+}
+
+.window-1 {
+    height: 5%;
+    width: 2.5%;
+    top: 89%;
+    left: 68%;
+}
+
+.window-1-left,
+.window-1-right {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-1-left-1,
+.window-1-right-1 {
+    height: 90%;
+    width: 85%;
+}
+
+.window-1-shutter-1 {
+    height: 5%;
+    width: 1.25%;
+    left: 66.75%;
+    bottom: 3.95%;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-1-shutter-2 {
+    height: 5%;
+    width: 1.25%;
+    left: 70.5%;
+    bottom: 3.95%;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-1-shutter-1-1,
+.window-1-shutter-2-1 {
+    height: 90%;
+    width: 85%;
+}
+
 /* BACKGROUND IMAGE */
 
 /* PILLARS */
@@ -219,6 +302,54 @@ body {
         linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%),
         linear-gradient(180deg, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 100%);
     background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* DOOR */
+
+.door,
+.door-1 {
+    background-color: white;
+    box-shadow: inset 0px 0px 2px 0 black;
+}
+
+/* DOOR WINDOWS */
+
+.door-window-1,
+.door-window-2 {
+    background-image: linear-gradient(135deg, rgba(0, 90, 200, 1) 0%, rgba(0, 115, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(0, 90, 200, 1) 50%, rgba(0, 115, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: inset 0px 0px 2.5px 0 black;
+}
+
+/* WINDOWS */
+
+/* WINDOW 1 */
+
+.window-1-left,
+.window-1-right {
+    background-color: white;
+    box-shadow: inset 0px 0px 2px 0 black;
+}
+
+.window-1-left-1,
+.window-1-right-1 {
+    background-image: linear-gradient(135deg, rgba(0, 90, 200, 1) 0%, rgba(0, 115, 255, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(0, 90, 200, 1) 50%, rgba(0, 115, 255, 1) 75%, rgba(255, 255, 255, 1) 100%);
+    box-shadow: inset 0px 0px 2.5px 0 black;
+}
+
+/* SHUTTERS */
+
+/* WINDOW 1 SHUTTERS */
+
+.window-1-shutter-1,
+.window-1-shutter-2 {
+    background-color: white;
+    box-shadow: inset 0px 0px 2px 0 black;;
+}
+
+.window-1-shutter-1-1,
+.window-1-shutter-2-1 {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(255, 255, 255, 1) 60%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 5.75%, 100% 100%;
 }
 
 /* Z-INDEX */
@@ -242,7 +373,11 @@ body {
 .front-steps-front-side,
 .front-steps-left-side,
 .pillar-left,
-.pillar-right {
+.pillar-right,
+.door,
+.window-1,
+.window-1-shutter-1,
+.window-1-shutter-2 {
     z-index: 2;
 }
 
@@ -274,7 +409,9 @@ body,
 .draw,
 .house,
 .front-face::after,
-.left-side::before {
+.left-side::before,
+.window-1-shutter-1,
+.window-1-shutter-2 {
     position: absolute;
 }
 
@@ -295,7 +432,17 @@ body,
 .front-steps-front-side,
 .front-steps-left-side,
 .pillar-left,
-.pillar-right {
+.pillar-right,
+.door,
+.door-1,
+.door-window-1,
+.door-handle,
+.door-window-2,
+.window-1,
+.window-1-left,
+.window-1-right,
+.window-1-left-1,
+.window-1-right-1 {
     position: relative;
 }
 
@@ -321,6 +468,18 @@ body,
 .front-steps-front-side,
 .front-steps-left-side,
 .pillar-left,
-.pillar-right {
+.pillar-right,
+.door,
+.door-1,
+.door-window-1,
+.door-handle,
+.door-window-2,
+.window-1,
+.window-1-left,
+.window-1-right,
+.window-1-left-1,
+.window-1-right-1,
+.window-1-shutter-1,
+.window-1-shutter-2 {
     display: flex;
 }
