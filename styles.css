@@ -1,36 +1,4 @@
-body,
-.navbar,
-.draw,
-.house {
-    position: absolute;
-}
-
-.sky,
-.ocean,
-.island,
-.lawn,
-.roof-right-side,
-.front-face,
-.front-face::before,
-.left-side,
-.roof-left-side {
-    position: relative;
-}
-
-.navbar,
-.draw,
-.sky,
-.ocean,
-.island,
-.lawn,
-.house,
-.roof-right-side,
-.front-face,
-.front-face::before,
-.left-side,
-.roof-left-side {
-    display: flex;
-}
+/* BODY */
 
 body {
     height: 100vh;
@@ -38,12 +6,15 @@ body {
     margin: 0;
 }
 
+/* NAVBAR */
+
 .navbar {
     height: 10%;
     width: 100%;
     background-color: black;
-    z-index: 1;
 }
+
+/* DRAW */
 
 .draw {
     height: 100%;
@@ -51,17 +22,23 @@ body {
     flex-direction: column;
 }
 
+/* SKY */
+
 .sky {
     height: 75%;
     width: 100%;
     background-image: linear-gradient(180deg, rgba(0, 90, 200, 1) 0%, rgba(0, 220, 255, 1) 60%, rgba(255, 255, 255, 1) 100%);
 }
 
+/* OCEAN */
+
 .ocean {
     height: 25%;
     width: 100%;
     background-image: linear-gradient(0deg, rgba(0, 90, 200, 1) 0%, rgba(0, 115, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
 }
+
+/* ISLAND */
 
 .island {
     height: 40%;
@@ -73,12 +50,16 @@ body {
     background-color: #fff5f5;
 }
 
+/* LAWN */
+
 .lawn {
     height: 85%;
     width: 85%;
     border-radius: 50%;
     background-color: green;
 }
+
+/* HOUSE */
 
 .house {
     height: 85%;
@@ -93,7 +74,6 @@ body {
     left: 65%;
     background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
     background-size: 100% 20%, 100% 100%;
-    z-index: 2;
 }
 
 .front-face::before {
@@ -104,7 +84,15 @@ body {
     bottom: 200%;
     background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
     background-size: 100% 10%, 100% 100%;
-    z-index: 2;
+}
+
+.front-face::after {
+    content: "";
+    height: 10%;
+    width: 100%;
+    top: 100%;
+    background-image: linear-gradient(0deg, rgba(125, 125, 125, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 80%, rgba(125, 125, 125, 1) 100%);
+    background-size: 100% 35%, 100% 100%;
 }
 
 .left-side {
@@ -113,28 +101,226 @@ body {
     top: 7.5%;
     left: 57.75%;
     background-image:
-        linear-gradient(0deg, rgba(255, 215, 250, 0.75) 15%, rgba(255, 145, 240, 0.75) 75%, rgba(110, 0, 95, 0.75) 100%),
+        linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100% 20%, 100% 100%, 100% 100%;
-    z-index: 2;
 }
 
-.roof-left-side {
+.left-side::before {
+    content: "";
+    height: 10%;
+    width: 100%;
+    top: 100%;
+    background-image:
+        linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 35%, 100% 100%, 100% 100%;
+}
+
+.roof-1-left-side {
     height: 20.5%;
     width: 15.5%;
     clip-path: polygon(50% 15%, 100% 0, 50% 100%, 0 100%);
     top: 7.75%;
     left: 57.35%;
-    background-color: black;
-    z-index: 3;
+    background-image:
+        linear-gradient(0deg, rgba(128, 0, 0, 0.75) 0%, rgba(128, 0, 0, 0.75) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
 }
 
-.roof-right-side {
+.roof-1-right-side {
     height: 20.5%;
     width: 15.5%;
     clip-path: polygon(0 15%, 50% 0, 100% 100%, 50% 100%);
     top: 28.25%;
     left: 65.1%;
-    background-color: black;
+    background-image:
+        linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+}
+
+.roof-2 {
+    height: 3.5%;
+    width: 10%;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
+    top: 52%;
+    left: 72.45%;
+    background-color: maroon;
+}
+
+.roof-2-left-side {
+    height: 3.5%;
+    width: 2.5%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    top: 55.5%;
+    left: 72.75%;
+    background-image:
+        linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 10.25%, 100% 100%, 100% 100%;
+}
+
+.roof-2-right-side {
+    height: 3.5%;
+    width: 2.5%;
+    clip-path: polygon(0 0, 0 100%, 100% 100%);
+    top: 59%;
+    left: 79.65%;
+    background-image:
+        linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 10.25%, 100% 100%, 100% 100%;
+}
+
+.front-steps-front-side {
+    height: 1%;
+    width: 6.9%;
+    top: 70%;
+    left: 75.25%;
+    background-image: linear-gradient(0deg, rgba(125, 125, 125, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 80%, rgba(125, 125, 125, 1) 100%);
+    background-size: 100% 35%, 100% 100%;
+}
+
+.front-steps-left-side {
+    height: 1%;
+    width: 2.5%;
+    top: 71%;
+    left: 72.75%;
+    background-image:
+        linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 35%, 100% 100%, 100% 100%;
+}
+
+.pillar-left {
+    height: 6.5%;
+    width: 0.35%;
+    top: 71%;
+    left: 74.6%;
+}
+
+.pillar-right {
+    height: 6.5%;
+    width: 0.35%;
+    top: 77.5%;
+    left: 81.5%;
+}
+
+/* BACKGROUND IMAGE */
+
+/* PILLARS */
+
+.pillar-left,
+.pillar-right {
+    background-image:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.25)100%),
+        linear-gradient(90deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 0, 0, 0.5) 100%),
+        linear-gradient(180deg, rgba(0, 0, 0, 1) 25%, rgba(255, 255, 255, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
+}
+
+/* Z-INDEX */
+
+/* z-index: 1; */
+
+.navbar,
+.roof-1-right-side {
     z-index: 1;
+}
+
+/* z-index: 2; */
+
+.front-face,
+.front-face::before,
+.front-face::after,
+.left-side,
+.left-side::before,
+.roof-2-left-side,
+.roof-2-right-side,
+.front-steps-front-side,
+.front-steps-left-side,
+.pillar-left,
+.pillar-right {
+    z-index: 2;
+}
+
+/* z-index: 3; */
+
+.roof-1-left-side,
+.roof-2 {
+    z-index: 3;
+}
+
+/* z-index: 4; */
+
+    {
+    z-index: 4;
+}
+
+/* z-index: 5; */
+
+    {
+    z-index: 5;
+}
+
+/* POSITIONS */
+
+/* ABSOLUTE */
+
+body,
+.navbar,
+.draw,
+.house,
+.front-face::after,
+.left-side::before {
+    position: absolute;
+}
+
+/* RELATIVE */
+
+.sky,
+.ocean,
+.island,
+.lawn,
+.front-face,
+.front-face::before,
+.left-side,
+.roof-1-left-side,
+.roof-1-right-side,
+.roof-2,
+.roof-2-left-side,
+.roof-2-right-side,
+.front-steps-front-side,
+.front-steps-left-side,
+.pillar-left,
+.pillar-right {
+    position: relative;
+}
+
+/* DISPLAY */
+
+.navbar,
+.draw,
+.sky,
+.ocean,
+.island,
+.lawn,
+.house,
+.front-face,
+.front-face::before,
+.front-face::after,
+.left-side,
+.left-side::before,
+.roof-1-left-side,
+.roof-1-right-side,
+.roof-2,
+.roof-2-left-side,
+.roof-2-right-side,
+.front-steps-front-side,
+.front-steps-left-side,
+.pillar-left,
+.pillar-right {
+    display: flex;
 }
