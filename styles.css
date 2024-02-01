@@ -81,7 +81,7 @@ body {
     height: 200%;
     width: 100%;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    bottom: 200%;
+    bottom: 100%;
     background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
     background-size: 100% 10%, 100% 100%;
 }
@@ -98,7 +98,7 @@ body {
 .left-side {
     height: 10%;
     width: 7.25%;
-    top: 7.5%;
+    top: 87.5%;
     left: 57.75%;
     background-image:
         linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
@@ -123,7 +123,7 @@ body {
     height: 20.5%;
     width: 15.5%;
     clip-path: polygon(50% 15%, 100% 0, 50% 100%, 0 100%);
-    top: 7.75%;
+    top: 67%;
     left: 57.35%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.75) 0%, rgba(128, 0, 0, 0.75) 100%),
@@ -135,7 +135,7 @@ body {
     height: 20.5%;
     width: 15.5%;
     clip-path: polygon(0 15%, 50% 0, 100% 100%, 50% 100%);
-    top: 28.25%;
+    top: 67%;
     left: 65.1%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
@@ -147,7 +147,7 @@ body {
     height: 3.5%;
     width: 10%;
     clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
-    top: 52%;
+    top: 87.5%;
     left: 72.45%;
     background-color: maroon;
 }
@@ -156,7 +156,7 @@ body {
     height: 3.5%;
     width: 2.5%;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
-    top: 55.5%;
+    top: 87.5%;
     left: 72.75%;
     background-image:
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
@@ -168,7 +168,7 @@ body {
     height: 3.5%;
     width: 2.5%;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
-    top: 59%;
+    top: 87.5%;
     left: 79.65%;
     background-image:
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
@@ -176,12 +176,33 @@ body {
     background-size: 100% 10.25%, 100% 100%, 100% 100%;
 }
 
+.roof-3-1 {
+    height: 4%;
+    width: 3.5%;
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 30% 100%);
+    bottom: 27%;
+    left: 64.5%;
+    background-color: maroon;
+}
+
+.roof-3-2 {
+    height: 4%;
+    width: 3.5%;
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
+    bottom: 27%;
+    left: 63.45%;
+    background-image:
+        linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+}
+
 /* FRONT STEPS */
 
 .front-steps-front-side {
     height: 1%;
     width: 6.9%;
-    top: 70%;
+    top: 97.5%;
     left: 75.25%;
     background-image: linear-gradient(0deg, rgba(125, 125, 125, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 80%, rgba(125, 125, 125, 1) 100%);
     background-size: 100% 35%, 100% 100%;
@@ -190,7 +211,7 @@ body {
 .front-steps-left-side {
     height: 1%;
     width: 2.5%;
-    top: 71%;
+    top: 97.5%;
     left: 72.75%;
     background-image:
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
@@ -203,14 +224,14 @@ body {
 .pillar-left {
     height: 6.5%;
     width: 0.35%;
-    top: 71%;
+    top: 91%;
     left: 74.6%;
 }
 
 .pillar-right {
     height: 6.5%;
     width: 0.35%;
-    top: 77.5%;
+    top: 91%;
     left: 81.5%;
 }
 
@@ -219,8 +240,8 @@ body {
 .door {
     height: 6.5%;
     width: 2%;
-    top: 83.95%;
-    left: 75.5%;
+    top: 91%;
+    left: 75.25%;
     align-items: center;
     justify-content: center;
 }
@@ -229,14 +250,13 @@ body {
     height: 90%;
     width: 85%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
 }
 
 .door-window-1 {
     height: 42.5%;
     width: 80%;
-    top: 2.5%;
 }
 
 .door-handle {
@@ -251,7 +271,6 @@ body {
 .door-window-2 {
     height: 42.5%;
     width: 80%;
-    bottom: 2.5%;
 }
 
 /* WINDOWS and SHUTTERS */
@@ -261,7 +280,7 @@ body {
 .window-1 {
     height: 5%;
     width: 2.5%;
-    top: 89%;
+    top: 91%;
     left: 68%;
 }
 
@@ -305,7 +324,109 @@ body {
     width: 85%;
 }
 
-/* BACKGROUND IMAGE */
+/* WINDOW 2 */
+
+.window-2-1 {
+    height: 4.5%;
+    width: 1.75%;
+    bottom: 4%;
+    left: 60.25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-2-2 {
+    height: 2.5%;
+    width: 1.75%;
+    border-radius: 47.5% 52.5% 50% 50% / 100% 100% 0% 0%;
+    bottom: 8.5%;
+    left: 60.25%;
+    align-items: center;
+    justify-content: center;
+}
+
+.window-2-1-1 {
+    height: 90%;
+    width: 90%;
+}
+
+.window-2-2-1 {
+    height: 85%;
+    width: 90%;
+    border-radius: 47.5% 52.5% 50% 50% / 100% 100% 0% 0%;
+}
+
+/* BEDROOM */
+
+.bedroom-1 {
+    height: 5%;
+    width: 2%;
+    bottom: 21.95%;
+    left: 63.75%;
+    align-items: center;
+    justify-content: center;
+    background-image:
+        linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 34%, 100% 100%, 100% 100%;
+}
+
+.bedroom-window {
+    height: 90%;
+    width: 90%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-image:
+        linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    box-shadow: inset 0px 0px 2px 0 black;
+}
+
+.bedroom-window-1 {
+    height: 20%;
+    width: 90%;
+    background-image:
+        linear-gradient(135deg, rgba(0, 90, 200, 0.5) 0%, rgba(0, 115, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 90, 200, 0.5) 50%, rgba(0, 115, 255, 0.5) 75%, rgba(255, 255, 255, 1) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    box-shadow: inset 0px 0px 2.5px 0 black;
+}
+
+.bedroom-window-2 {
+    height: 70%;
+    width: 90%;
+    background-image:
+        linear-gradient(135deg, rgba(0, 90, 200, 0.5) 0%, rgba(0, 115, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 90, 200, 0.5) 50%, rgba(0, 115, 255, 0.5) 75%, rgba(255, 255, 255, 1) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    box-shadow: inset 0px 0px 2.5px 0 black;
+}
+
+.bedroom-2 {
+    height: 5%;
+    width: 2.25%;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    bottom: 21.95%;
+    left: 65.75%;
+    background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
+    background-size: 100% 34%, 100% 100%;
+}
+
+.bedroom-3 {
+    height: 4%;
+    width: 2%;
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    bottom: 27%;
+    left: 63.75%;
+    background-image:
+        linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 50%, 100% 100%, 100% 100%;
+}
+
+/* BACKGROUND-IMAGE */
 
 /* PILLARS */
 
@@ -334,7 +455,7 @@ body {
     box-shadow: inset 0px 0px 2.5px 0 black;
 }
 
-/* WINDOWS */
+/* WINDOWS and SHUTTERS */
 
 /* WINDOW 1 */
 
@@ -365,6 +486,26 @@ body {
     background-size: 100% 5.75%, 100% 100%;
 }
 
+/* WINDOW 2 */
+
+.window-2-1,
+.window-2-2 {
+    background-image:
+        linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    box-shadow: inset 0px 0px 2px 0 black;
+}
+
+.window-2-1-1,
+.window-2-2-1 {
+    background-image:
+        linear-gradient(135deg, rgba(0, 90, 200, 0.5) 0%, rgba(0, 115, 255, 0.5) 25%, rgba(255, 255, 255, 0.5) 50%, rgba(0, 90, 200, 0.5) 50%, rgba(0, 115, 255, 0.5) 75%, rgba(255, 255, 255, 1) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
+    box-shadow: inset 0px 0px 2.5px 0 black;
+}
+
 /* Z-INDEX */
 
 /* z-index: 1; */
@@ -390,20 +531,26 @@ body {
 .door,
 .window-1,
 .window-1-shutter-1,
-.window-1-shutter-2 {
+.window-1-shutter-2,
+.window-2-1,
+.window-2-2 {
     z-index: 2;
 }
 
 /* z-index: 3; */
 
 .roof-1-left-side,
-.roof-2 {
+.roof-2,
+.roof-3-2,
+.bedroom-1,
+.bedroom-2,
+.bedroom-3 {
     z-index: 3;
 }
 
 /* z-index: 4; */
 
-    {
+.roof-3-1 {
     z-index: 4;
 }
 
@@ -421,10 +568,32 @@ body,
 .navbar,
 .draw,
 .house,
+.front-face,
+.front-face::before,
 .front-face::after,
+.left-side,
 .left-side::before,
+.roof-1-left-side,
+.roof-1-right-side,
+.roof-2,
+.roof-2-left-side,
+.roof-2-right-side,
+.roof-3-1,
+.roof-3-2,
+.front-steps-front-side,
+.front-steps-left-side,
+.pillar-left,
+.pillar-right,
+.door,
+.window-1,
 .window-1-shutter-1,
-.window-1-shutter-2 {
+.window-1-shutter-2,
+.window-2-1,
+.window-2-2,
+.bedroom-1,
+.bedroom-window,
+.bedroom-2,
+.bedroom-3 {
     position: absolute;
 }
 
@@ -434,24 +603,10 @@ body,
 .ocean,
 .island,
 .lawn,
-.front-face,
-.front-face::before,
-.left-side,
-.roof-1-left-side,
-.roof-1-right-side,
-.roof-2,
-.roof-2-left-side,
-.roof-2-right-side,
-.front-steps-front-side,
-.front-steps-left-side,
-.pillar-left,
-.pillar-right,
-.door,
 .door-1,
 .door-window-1,
 .door-handle,
 .door-window-2,
-.window-1,
 .window-1-left,
 .window-1-right,
 .window-1-left-1,
@@ -478,6 +633,8 @@ body,
 .roof-2,
 .roof-2-left-side,
 .roof-2-right-side,
+.roof-3-1,
+.roof-3-2,
 .front-steps-front-side,
 .front-steps-left-side,
 .pillar-left,
@@ -493,6 +650,14 @@ body,
 .window-1-left-1,
 .window-1-right-1,
 .window-1-shutter-1,
-.window-1-shutter-2 {
+.window-1-shutter-2,
+.window-2-1,
+.window-2-2,
+.window-2-1-1,
+.window-2-2-1,
+.bedroom-1,
+.bedroom-window,
+.bedroom-2,
+.bedroom-3 {
     display: flex;
 }
