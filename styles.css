@@ -1,5 +1,3 @@
-/* BODY */
-
 body {
     height: 100vh;
     width: 100vw;
@@ -67,6 +65,8 @@ body {
     flex-direction: column-reverse;
 }
 
+/* FACES */
+
 .front-face {
     height: 10%;
     width: 15%;
@@ -116,6 +116,8 @@ body {
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100% 35%, 100% 100%, 100% 100%;
 }
+
+/* ROOF */
 
 .roof-1-left-side {
     height: 20.5%;
@@ -174,6 +176,8 @@ body {
     background-size: 100% 10.25%, 100% 100%, 100% 100%;
 }
 
+/* FRONT STEPS */
+
 .front-steps-front-side {
     height: 1%;
     width: 6.9%;
@@ -194,6 +198,8 @@ body {
     background-size: 100% 35%, 100% 100%, 100% 100%;
 }
 
+/* PILLARS */
+
 .pillar-left {
     height: 6.5%;
     width: 0.35%;
@@ -207,6 +213,8 @@ body {
     top: 77.5%;
     left: 81.5%;
 }
+
+/* DOOR */
 
 .door {
     height: 6.5%;
@@ -246,6 +254,10 @@ body {
     bottom: 2.5%;
 }
 
+/* WINDOWS and SHUTTERS */
+
+/* WINDOW 1 */
+
 .window-1 {
     height: 5%;
     width: 2.5%;
@@ -266,6 +278,8 @@ body {
     height: 90%;
     width: 85%;
 }
+
+/* SHUTTERS */
 
 .window-1-shutter-1 {
     height: 5%;
@@ -338,12 +352,11 @@ body {
 
 /* SHUTTERS */
 
-/* WINDOW 1 SHUTTERS */
-
 .window-1-shutter-1,
 .window-1-shutter-2 {
     background-color: white;
-    box-shadow: inset 0px 0px 2px 0 black;;
+    box-shadow: inset 0px 0px 2px 0 black;
+    ;
 }
 
 .window-1-shutter-1-1,
