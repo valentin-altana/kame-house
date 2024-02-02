@@ -237,7 +237,7 @@ body {
     height: 20.5%;
     width: 15.5%;
     clip-path: polygon(50% 15%, 100% 0, 50% 100%, 0 100%);
-    top: 67%;
+    top: 67.05%;
     left: 57.35%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.75) 0%, rgba(128, 0, 0, 0.75) 100%),
@@ -249,7 +249,7 @@ body {
     height: 20.5%;
     width: 15.5%;
     clip-path: polygon(0 15%, 50% 0, 100% 100%, 50% 100%);
-    top: 67%;
+    top: 67.05%;
     left: 65.1%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
@@ -294,7 +294,7 @@ body {
     height: 4%;
     width: 3.5%;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 30% 100%);
-    bottom: 27%;
+    bottom: 26.9%;
     left: 64.5%;
     background-color: maroon;
 }
@@ -303,7 +303,7 @@ body {
     height: 4%;
     width: 3.5%;
     clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
-    bottom: 27%;
+    bottom: 26.9%;
     left: 63.45%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
@@ -531,7 +531,7 @@ body {
 .bedroom-1 {
     height: 5%;
     width: 2%;
-    bottom: 21.95%;
+    bottom: 21.85%;
     left: 63.75%;
     align-items: center;
     justify-content: center;
@@ -579,7 +579,7 @@ body {
     height: 5%;
     width: 2.25%;
     clip-path: polygon(0 0, 0 100%, 100% 0);
-    bottom: 21.95%;
+    bottom: 21.85%;
     left: 65.75%;
     background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
     background-size: 100% 34%, 100% 100%;
@@ -589,7 +589,7 @@ body {
     height: 4%;
     width: 2%;
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
-    bottom: 27%;
+    bottom: 26.9%;
     left: 63.75%;
     background-image:
         linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
