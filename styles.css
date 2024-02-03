@@ -805,6 +805,17 @@ body {
     background-size: 100% 50%, 100% 100%, 100% 100%;
 }
 
+/* SHADOW */
+
+.shadow {
+    height: 11%;
+    width: 10.75%;
+    clip-path: polygon(17.5% 0, 87.5% 0, 82.5% 100%, 12.5% 100%);
+    bottom: 1.5%;
+    left: 70.575%;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
 /* Z-INDEX */
 
 /* z-index: 1; */
@@ -824,11 +835,7 @@ body {
 .front-face::after,
 .left-side,
 .left-side::before,
-.roof-2-left-side,
 .roof-2-right-side,
-.front-steps-front-side,
-.front-steps-left-side,
-.pillar-left,
 .pillar-right,
 .door,
 .window-1,
@@ -838,14 +845,18 @@ body {
 .window-2-2,
 .palm-4-1,
 .palm-4-2,
-.palm-4-3 {
+.palm-4-3,
+.shadow {
     z-index: 2;
 }
 
 /* z-index: 3; */
 
 .roof-1-left-side,
-.roof-2,
+.roof-2-left-side,
+.front-steps-front-side,
+.front-steps-left-side,
+.pillar-left,
 .roof-3-2,
 .bedroom-1,
 .bedroom-2,
@@ -861,6 +872,7 @@ body {
 
 /* z-index: 4; */
 
+.roof-2,
 .roof-3-1,
 .palm-2-1,
 .palm-2-2,
@@ -945,7 +957,8 @@ body,
 .bush-12,
 .bush-13,
 .bush-14,
-.bush-15 {
+.bush-15,
+.shadow {
     position: absolute;
 }
 
@@ -1046,6 +1059,7 @@ body,
 .bush-12,
 .bush-13,
 .bush-14,
-.bush-15 {
+.bush-15,
+.shadow {
     display: flex;
 }
