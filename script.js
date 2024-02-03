@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function togglePopup(popupId) {
-    var popup = document.getElementById(popupId);
-    var popups = document.querySelectorAll('.popup');
+    let popup = document.getElementById(popupId);
+    let popups = document.querySelectorAll('.popup');
 
     popups.forEach(function (item) {
         if (item !== popup) {
@@ -24,7 +24,7 @@ function togglePopup(popupId) {
 }
 
 function closeAllPopups() {
-    var popups = document.querySelectorAll('.popup');
+    let popups = document.querySelectorAll('.popup');
 
     popups.forEach(function (item) {
         item.style.display = 'none';
