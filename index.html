@@ -10,7 +10,27 @@
 
 <body>
     <!-- NAVBAR -->
-    <div class="navbar"></div>
+    <div class="navbar">
+        <!-- BUTTONS -->
+        <div class="main-buttons">
+            <button class="button" onclick="togglePopup('popup-1')">Portfolio</button>
+            <button class="button" onclick="togglePopup('popup-2')">Qui suis-je ?</button>
+            <button class="button" onclick="togglePopup('popup-3')">Contact</button>
+        </div>
+    </div>
+    <!-- POP-UPS -->
+    <!-- POP-UP 1 -->
+    <div class="popup" id="popup-1">
+        <div class="popup-content"></div>
+    </div>
+    <!-- POP-UP 2 -->
+    <div class="popup" id="popup-2">
+        <div class="popup-content"></div>
+    </div>
+    <!-- POP-UP 3 -->
+    <div class="popup" id="popup-3">
+        <div class="popup-content"></div>
+    </div>
     <!-- DRAW -->
     <div class="draw">
         <!-- SKY -->
@@ -139,6 +159,7 @@
             <div class="shadow"></div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

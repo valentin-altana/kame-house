@@ -1,15 +1,85 @@
 body {
     height: 100vh;
     width: 100vw;
+    align-items: center;
+    justify-content: center;
     margin: 0;
 }
 
 /* NAVBAR */
 
 .navbar {
-    height: 63.4px;
-    width: 1200px;
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
     background-color: black;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.main-buttons {
+    height: 75px;
+    width: 500px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+/* BUTTONS */
+
+.button {
+    /* BUTTON */
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: #191919;
+    box-shadow: 0px 0px 5px 0px white;
+    transition:
+        background-color 0.15s,
+        box-shadow 0.3s;
+    /* TEXT */
+    text-align: center;
+    color: white;
+}
+
+.button:hover {
+    background-color: #323232;
+    box-shadow: 0px 0px 10px 2.5px white;
+}
+
+.button:active {
+    background-color: skyblue;
+    box-shadow: 0px 0px 15px 7.5px skyblue;
+    text-shadow: 0px 0px 5px white;
+}
+
+/* POP-UPS */
+
+.popup {
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    top: 350px;
+    left: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 25px 0px black;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+    animation: fadeInScale 0.5s forwards;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -50%) scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
 }
 
 /* DRAW */
@@ -933,12 +1003,19 @@ body {
     z-index: 6;
 }
 
+/* z-index: 7; */
+
+.popup {
+    z-index: 7;
+}
+
 /* POSITIONS */
 
 /* ABSOLUTE */
 
 body,
 .navbar,
+.main-buttons,
 .draw,
 .underwater,
 .palm-tree-1,
@@ -1030,6 +1107,7 @@ body,
 /* DISPLAY */
 
 .navbar,
+.main-buttons,
 .draw,
 .sky,
 .ocean,
