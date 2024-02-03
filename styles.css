@@ -7,8 +7,8 @@ body {
 /* NAVBAR */
 
 .navbar {
-    height: 10%;
-    width: 100%;
+    height: 63.4px;
+    width: 1200px;
     background-color: black;
 }
 
@@ -383,6 +383,29 @@ body {
     background-image: linear-gradient(90deg, rgba(0, 50, 0, 1) 0%, rgba(0, 180, 0, 1) 100%);
 }
 
+/* ROCK */
+
+.rock-1 {
+    height: 15%;
+    width: 3%;
+    border-radius: 50% 50% 50% 50% / 90% 90% 10% 10%;
+    top: 57.5%;
+    left: 60%;
+}
+
+.rock-2 {
+    height: 30%;
+    width: 4%;
+    border-radius: 65% 35% 50% 50% / 90% 90% 10% 10%;
+    top: 45%;
+    left: 57.5%;
+}
+
+.rock-1,
+.rock-2 {
+    background-image: linear-gradient(90deg, rgba(50, 50, 50, 1) 0%, rgba(100, 100, 100, 1) 50%, rgba(200, 200, 200, 1) 100%);
+}
+
 /* HOUSE */
 
 .house {
@@ -441,6 +464,7 @@ body {
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100% 35%, 100% 100%, 100% 100%;
+    box-shadow: inset 1px 0px 5px 0px #323232;
 }
 
 /* ROOF */
@@ -488,6 +512,7 @@ body {
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100% 10.25%, 100% 100%, 100% 100%;
+    box-shadow: inset 1px 0px 5px 0px #323232;
 }
 
 .roof-2-right-side {
@@ -543,6 +568,7 @@ body {
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100% 35%, 100% 100%, 100% 100%;
+    box-shadow: inset 1px 0px 5px 0px #323232;
 }
 
 /* PILLARS */
@@ -832,15 +858,18 @@ body {
 /* z-index: 1; */
 
 .navbar,
-.roof-1-right-side,
 .palm-5-1,
 .palm-5-2,
-.palm-5-3 {
+.palm-5-3,
+.roof-1-right-side {
     z-index: 1;
 }
 
 /* z-index: 2; */
 
+.palm-4-1,
+.palm-4-2,
+.palm-4-3,
 .front-face,
 .front-face::before,
 .front-face::after,
@@ -854,15 +883,18 @@ body {
 .window-1-shutter-2,
 .window-2-1,
 .window-2-2,
-.palm-4-1,
-.palm-4-2,
-.palm-4-3,
 .shadow {
     z-index: 2;
 }
 
 /* z-index: 3; */
 
+.palm-3-1,
+.palm-3-2,
+.palm-3-3,
+.bush-5,
+.bush-6,
+.bush-7,
 .roof-1-left-side,
 .roof-2-left-side,
 .front-steps-front-side,
@@ -871,23 +903,19 @@ body {
 .roof-3-2,
 .bedroom-1,
 .bedroom-2,
-.bedroom-3,
-.palm-3-1,
-.palm-3-2,
-.palm-3-3,
-.bush-5,
-.bush-6,
-.bush-7 {
+.bedroom-3 {
     z-index: 3;
 }
 
 /* z-index: 4; */
 
-.roof-2,
-.roof-3-1,
 .palm-2-1,
 .palm-2-2,
-.palm-2-3 {
+.palm-2-3,
+.rock-1,
+.rock-2,
+.roof-2,
+.roof-3-1 {
     z-index: 4;
 }
 
@@ -899,6 +927,12 @@ body {
     z-index: 5;
 }
 
+/* z-index: 6; */
+
+.navbar {
+    z-index: 6;
+}
+
 /* POSITIONS */
 
 /* ABSOLUTE */
@@ -907,33 +941,6 @@ body,
 .navbar,
 .draw,
 .underwater,
-.house,
-.front-face,
-.front-face::before,
-.front-face::after,
-.left-side,
-.left-side::before,
-.roof-1-left-side,
-.roof-1-right-side,
-.roof-2,
-.roof-2-left-side,
-.roof-2-right-side,
-.roof-3-1,
-.roof-3-2,
-.front-steps-front-side,
-.front-steps-left-side,
-.pillar-left,
-.pillar-right,
-.door,
-.window-1,
-.window-1-shutter-1,
-.window-1-shutter-2,
-.window-2-1,
-.window-2-2,
-.bedroom-1,
-.bedroom-window,
-.bedroom-2,
-.bedroom-3,
 .palm-tree-1,
 .palm-tree-2,
 .palm-tree-3,
@@ -970,6 +977,35 @@ body,
 .bush-13,
 .bush-14,
 .bush-15,
+.rock-1,
+.rock-2,
+.house,
+.front-face,
+.front-face::before,
+.front-face::after,
+.left-side,
+.left-side::before,
+.roof-1-left-side,
+.roof-1-right-side,
+.roof-2,
+.roof-2-left-side,
+.roof-2-right-side,
+.roof-3-1,
+.roof-3-2,
+.front-steps-front-side,
+.front-steps-left-side,
+.pillar-left,
+.pillar-right,
+.door,
+.window-1,
+.window-1-shutter-1,
+.window-1-shutter-2,
+.window-2-1,
+.window-2-2,
+.bedroom-1,
+.bedroom-window,
+.bedroom-2,
+.bedroom-3,
 .shadow {
     position: absolute;
 }
@@ -1000,6 +1036,44 @@ body,
 .underwater,
 .island,
 .lawn,
+.palm-tree-1,
+.palm-tree-2,
+.palm-tree-3,
+.trunk-1,
+.trunk-2,
+.trunk-3,
+.palm-1-1,
+.palm-2-1,
+.palm-3-1,
+.palm-4-1,
+.palm-5-1,
+.palm-1-2,
+.palm-2-2,
+.palm-3-2,
+.palm-4-2,
+.palm-5-2,
+.palm-1-3,
+.palm-2-3,
+.palm-3-3,
+.palm-4-3,
+.palm-5-3,
+.bush-1,
+.bush-2,
+.bush-3,
+.bush-4,
+.bush-5,
+.bush-6,
+.bush-7,
+.bush-8,
+.bush-9,
+.bush-10,
+.bush-11,
+.bush-12,
+.bush-13,
+.bush-14,
+.bush-15,
+.rock-1,
+.rock-2,
 .house,
 .front-face,
 .front-face::before,
@@ -1037,42 +1111,6 @@ body,
 .bedroom-window,
 .bedroom-2,
 .bedroom-3,
-.palm-tree-1,
-.palm-tree-2,
-.palm-tree-3,
-.trunk-1,
-.trunk-2,
-.trunk-3,
-.palm-1-1,
-.palm-2-1,
-.palm-3-1,
-.palm-4-1,
-.palm-5-1,
-.palm-1-2,
-.palm-2-2,
-.palm-3-2,
-.palm-4-2,
-.palm-5-2,
-.palm-1-3,
-.palm-2-3,
-.palm-3-3,
-.palm-4-3,
-.palm-5-3,
-.bush-1,
-.bush-2,
-.bush-3,
-.bush-4,
-.bush-5,
-.bush-6,
-.bush-7,
-.bush-8,
-.bush-9,
-.bush-10,
-.bush-11,
-.bush-12,
-.bush-13,
-.bush-14,
-.bush-15,
 .shadow {
     display: flex;
 }
