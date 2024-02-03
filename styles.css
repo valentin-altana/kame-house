@@ -38,6 +38,17 @@ body {
 
 /* ISLAND */
 
+.underwater {
+    height: 50%;
+    width: 57.5%;
+    border-radius: 50%;
+    top: 10%;
+    left: 41.5%;
+    background-color: #fff5f5;
+    box-shadow: 0px 0px 10px 10px #fff5f5;
+    opacity: 50%;
+}
+
 .island {
     height: 40%;
     width: 50%;
@@ -895,6 +906,7 @@ body {
 body,
 .navbar,
 .draw,
+.underwater,
 .house,
 .front-face,
 .front-face::before,
@@ -985,6 +997,7 @@ body,
 .draw,
 .sky,
 .ocean,
+.underwater,
 .island,
 .lawn,
 .house,
