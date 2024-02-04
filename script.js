@@ -6,27 +6,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+function fadeOutAnimation(popup) {
+    popup.style.animation = 'fadeOutScale 0.5s forwards';
+
+    setTimeout(function () {
+        popup.style.display = 'none';
+        popup.style.animation = 'fadeInScale 0.5s forwards';
+    }, 500);
+}
+
 function togglePopup(popupId) {
-    let popup = document.getElementById(popupId);
+    let currentPopup = document.getElementById(popupId);
     let popups = document.querySelectorAll('.popup');
 
     popups.forEach(function (item) {
-        if (item !== popup) {
+        if (item !== currentPopup) {
             item.style.display = 'none';
         }
     });
 
-    if (popup.style.display === 'block') {
-        popup.style.display = 'none';
+    if (currentPopup.style.display === 'block') {
+        fadeOutAnimation(currentPopup);
     } else {
-        popup.style.display = 'block';
+        currentPopup.style.display = 'block';
     }
 }
 
 function closeAllPopups() {
     let popups = document.querySelectorAll('.popup');
-
-    popups.forEach(function (item) {
-        item.style.display = 'none';
-    });
+    popups.forEach(fadeOutAnimation);
 }
