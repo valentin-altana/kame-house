@@ -1,11 +1,26 @@
 body {
     height: 100vh;
-    min-height: 634px;
     width: 100vw;
-    /* min-width: 1200px; */
     align-items: center;
     justify-content: center;
     margin: 0;
+}
+
+/* ALL */
+
+.all {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+/* MAIN and DRAW */
+
+.main-draw {
+    max-height: 634px;
+    min-height: 634px;
+    max-width: 1200px;
+    min-width: 1200px;
 }
 
 /* MAIN */
@@ -89,7 +104,6 @@ body {
     top: 50%;
     left: 50%;
     background-color: rgba(255, 255, 255, 0.75);
-    box-shadow: 0px 0px 2.5px 0px black;
     opacity: 0;
     display: none;
     transform: translate(-50%, -50%) scale(0);
@@ -1046,6 +1060,8 @@ body {
 /* ABSOLUTE */
 
 body,
+.all,
+.main-draw,
 .main,
 .draw,
 .underwater,
@@ -1142,6 +1158,8 @@ body,
 
 /* DISPLAY */
 
+.all,
+.main-draw,
 .main,
 .navbar,
 .main-buttons,
