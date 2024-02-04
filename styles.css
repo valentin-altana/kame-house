@@ -14,12 +14,12 @@ body {
     align-items: center;
     justify-content: space-around;
     background-color: black;
-    box-shadow: 0px 0px 5px 1px black;
+    box-shadow: 0px 0px 5px 0px black;
 }
 
 .main-buttons {
     height: 75px;
-    width: 500px;
+    width: 400px;
     align-items: center;
     justify-content: space-around;
     background-color: black;
@@ -58,13 +58,13 @@ body {
 /* POP-UPS */
 
 .popup {
-    height: 500px;
+    height: 525px;
     width: 500px;
     border-radius: 10px;
-    top: 350px;
+    top: 355px;
     left: 50%;
     background-color: white;
-    box-shadow: 0px 0px 25px 0px black;
+    box-shadow: 0px 0px 2.5px 0px black;
     opacity: 0;
     display: none;
     position: fixed;
@@ -100,7 +100,9 @@ body {
 
 .draw {
     height: 100%;
+    min-height: 634px;
     width: 100%;
+    min-width: 1200px;
     flex-direction: column;
 }
 
