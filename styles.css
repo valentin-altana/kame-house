@@ -1,3 +1,8 @@
+/* max-height: 634px;
+min-height: 634px;
+max-width: 1200px;
+min-width: 1200px; */
+
 body {
     height: 100vh;
     width: 100vw;
@@ -17,10 +22,8 @@ body {
 /* MAIN and DRAW */
 
 .main-draw {
-    max-height: 634px;
-    min-height: 634px;
-    max-width: 1200px;
-    min-width: 1200px;
+    height: 100%;
+    width: 100%;
 }
 
 /* MAIN */
@@ -542,7 +545,7 @@ body {
     height: 10%;
     width: 15%;
     bottom: 2.5%;
-    left: 65%;
+    left: 45%;
     background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
     background-size: 100% 20%, 100% 100%;
 }
@@ -570,7 +573,7 @@ body {
     height: 10%;
     width: 7.25%;
     top: 87.5%;
-    left: 57.75%;
+    left: 37.75%;
     background-image:
         linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -596,7 +599,7 @@ body {
     width: 15.5%;
     clip-path: polygon(50% 15%, 100% 0, 50% 100%, 0 100%);
     top: 67.05%;
-    left: 57.35%;
+    left: 37.35%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.75) 0%, rgba(128, 0, 0, 0.75) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -608,7 +611,7 @@ body {
     width: 15.5%;
     clip-path: polygon(0 15%, 50% 0, 100% 100%, 50% 100%);
     top: 67.05%;
-    left: 65.1%;
+    left: 45.1%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -620,7 +623,7 @@ body {
     width: 10%;
     clip-path: polygon(0 0, 75% 0, 100% 100%, 25% 100%);
     top: 87.5%;
-    left: 72.45%;
+    left: 52.45%;
     background-color: maroon;
 }
 
@@ -629,7 +632,7 @@ body {
     width: 2.5%;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
     top: 87.5%;
-    left: 72.75%;
+    left: 52.75%;
     background-image:
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -642,7 +645,7 @@ body {
     width: 2.5%;
     clip-path: polygon(0 0, 0 100%, 100% 100%);
     top: 87.5%;
-    left: 79.65%;
+    left: 59.65%;
     background-image:
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -654,7 +657,7 @@ body {
     width: 3.5%;
     clip-path: polygon(0 0, 90% 0, 100% 100%, 30% 100%);
     bottom: 26.9%;
-    left: 64.5%;
+    left: 44.5%;
     background-color: maroon;
 }
 
@@ -663,7 +666,7 @@ body {
     width: 3.5%;
     clip-path: polygon(30% 0, 100% 0, 70% 100%, 0 100%);
     bottom: 26.9%;
-    left: 63.45%;
+    left: 43.45%;
     background-image:
         linear-gradient(0deg, rgba(128, 0, 0, 0.5) 0%, rgba(128, 0, 0, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -676,7 +679,7 @@ body {
     height: 1%;
     width: 6.9%;
     top: 97.5%;
-    left: 75.25%;
+    left: 55.25%;
     background-image: linear-gradient(0deg, rgba(125, 125, 125, 1) 0%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 20%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 80%, rgba(125, 125, 125, 1) 100%);
     background-size: 100% 35%, 100% 100%;
 }
@@ -685,7 +688,7 @@ body {
     height: 1%;
     width: 2.5%;
     top: 97.5%;
-    left: 72.75%;
+    left: 52.75%;
     background-image:
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -699,14 +702,14 @@ body {
     height: 6.5%;
     width: 0.35%;
     top: 91%;
-    left: 74.6%;
+    left: 54.6%;
 }
 
 .pillar-right {
     height: 6.5%;
     width: 0.35%;
     top: 91%;
-    left: 81.5%;
+    left: 61.5%;
 }
 
 .pillar-left,
@@ -724,7 +727,7 @@ body {
     height: 6.5%;
     width: 2%;
     top: 91%;
-    left: 75.25%;
+    left: 55.25%;
     align-items: center;
     justify-content: center;
 }
@@ -779,7 +782,7 @@ body {
     height: 5%;
     width: 2.5%;
     top: 91%;
-    left: 68%;
+    left: 48%;
 }
 
 .window-1-left,
@@ -808,8 +811,8 @@ body {
 .window-1-shutter-1 {
     height: 5%;
     width: 1.25%;
-    left: 66.75%;
     bottom: 3.95%;
+    left: 46.75%;
     align-items: center;
     justify-content: center;
 }
@@ -817,8 +820,8 @@ body {
 .window-1-shutter-2 {
     height: 5%;
     width: 1.25%;
-    left: 70.5%;
     bottom: 3.95%;
+    left: 50.5%;
     align-items: center;
     justify-content: center;
 }
@@ -848,7 +851,7 @@ body {
     height: 4.5%;
     width: 1.75%;
     bottom: 4%;
-    left: 60.25%;
+    left: 40.25%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -858,7 +861,7 @@ body {
     width: 1.75%;
     border-radius: 47.5% 52.5% 50% 50% / 100% 100% 0% 0%;
     bottom: 8.5%;
-    left: 60.25%;
+    left: 40.25%;
     align-items: center;
     justify-content: space-evenly;
 }
@@ -899,7 +902,7 @@ body {
     height: 5%;
     width: 2%;
     bottom: 21.85%;
-    left: 63.75%;
+    left: 43.75%;
     align-items: center;
     justify-content: center;
     background-image:
@@ -947,7 +950,7 @@ body {
     width: 2.25%;
     clip-path: polygon(0 0, 0 100%, 100% 0);
     bottom: 21.85%;
-    left: 65.75%;
+    left: 45.75%;
     background-image: linear-gradient(0deg, rgba(255, 215, 250, 1) 15%, rgba(255, 145, 240, 1) 75%, rgba(110, 0, 95, 1) 100%);
     background-size: 100% 34%, 100% 100%;
 }
@@ -957,7 +960,7 @@ body {
     width: 2%;
     clip-path: polygon(50% 0, 0 100%, 100% 100%);
     bottom: 26.9%;
-    left: 63.75%;
+    left: 43.75%;
     background-image:
         linear-gradient(0deg, rgba(255, 215, 250, 0.5) 15%, rgba(255, 145, 240, 0.5) 75%, rgba(110, 0, 95, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
@@ -971,7 +974,7 @@ body {
     width: 10.75%;
     clip-path: polygon(17.5% 0, 87.5% 0, 82.5% 100%, 12.5% 100%);
     bottom: 1.5%;
-    left: 70.575%;
+    left: 50.575%;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
