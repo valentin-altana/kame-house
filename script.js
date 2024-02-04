@@ -25,10 +25,10 @@ function togglePopup(popupId) {
         }
     });
 
-    if (currentPopup.style.display === 'block') {
+    if (currentPopup.style.display === 'flex') {
         fadeOutAnimation(currentPopup);
     } else {
-        currentPopup.style.display = 'block';
+        currentPopup.style.display = 'flex';
     }
 }
 
