@@ -145,6 +145,7 @@ body {
     width: 100%;
     align-items: center;
     flex-direction: column;
+    overflow: hidden;
 }
 
 /* SKY */
