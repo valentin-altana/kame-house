@@ -143,6 +143,7 @@ body {
 .draw {
     height: 100%;
     width: 100%;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -536,7 +537,15 @@ body {
 
 .house {
     height: 85%;
-    width: 100%;
+    width: 50%;
+    justify-content: space-around;
+}
+
+/* HOUSE ELEMENTS */
+
+.house-elements {
+    height: 100%;
+    width: 200%;
     flex-direction: column-reverse;
 }
 
@@ -1108,6 +1117,7 @@ body,
 .rock-1,
 .rock-2,
 .house,
+.house-elements,
 .front-face,
 .front-face::before,
 .front-face::after,
@@ -1214,6 +1224,7 @@ body,
 .rock-1,
 .rock-2,
 .house,
+.house-elements,
 .front-face,
 .front-face::before,
 .front-face::after,
