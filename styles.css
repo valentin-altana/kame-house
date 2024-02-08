@@ -607,7 +607,6 @@ body {
         linear-gradient(0deg, rgba(125, 125, 125, 0.5) 0%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0.5) 80%, rgba(255, 255, 255, 0.5) 80%, rgba(125, 125, 125, 0.5) 100%),
         linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     background-size: 100% 35%, 100% 100%, 100% 100%;
-    box-shadow: inset 1px 0px 5px 0px #323232;
 }
 
 /* ROOF */
