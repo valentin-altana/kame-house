@@ -530,8 +530,9 @@ body {
 /* HOUSE */
 
 .house {
-    height: 85%;
+    height: 340%;
     width: 50%;
+    bottom: 60%;
     justify-content: space-around;
 }
 
