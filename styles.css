@@ -27,8 +27,6 @@ body {
 .main {
     height: 100%;
     width: 100%;
-    max-height: 634px;
-    min-height: 634px;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -48,8 +46,6 @@ body {
 .main-buttons {
     height: 70px;
     width: 50%;
-    max-width: 600px;
-    min-width: 350px;
     align-items: center;
     justify-content: space-around;
     background-color: black;
@@ -97,14 +93,11 @@ body {
 .popups {
     height: 100%;
     width: 57.5%;
-    max-width: 600px;
-    min-width: 350px;
 }
 
 .popup {
     height: 100%;
     width: 100%;
-    max-height: 530.533px;
     border-radius: 10px;
     top: 50%;
     left: 50%;
@@ -154,8 +147,6 @@ body {
 .sky {
     height: 75%;
     width: 100%;
-    max-height: 475.5px;
-    min-width: 1200px;
     background-image: linear-gradient(180deg, rgba(0, 90, 200, 1) 0%, rgba(0, 220, 255, 1) 60%, rgba(255, 255, 255, 1) 100%);
 }
 
@@ -164,8 +155,6 @@ body {
 .ocean {
     height: 25%;
     width: 100%;
-    max-height: 158.5px;
-    min-width: 1200px;
     justify-content: space-around;
     background-image: linear-gradient(0deg, rgba(0, 90, 200, 1) 0%, rgba(0, 115, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
 }
@@ -544,9 +533,6 @@ body {
 .house {
     height: 85%;
     width: 50%;
-    max-height: 538.9px;
-    max-width: 600px;
-    min-width: 600px;
     justify-content: space-around;
 }
 
