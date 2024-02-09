@@ -1,3 +1,5 @@
+// POP-UPS
+
 document.addEventListener('DOMContentLoaded', function () {
     document.body.addEventListener('click', function (event) {
         if (!event.target.closest('.popup') && !event.target.closest('.button')) {
