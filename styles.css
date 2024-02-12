@@ -27,6 +27,7 @@ body {
 .main {
     height: 100%;
     width: 100%;
+    min-height: 634px;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
@@ -46,8 +47,10 @@ body {
 .main-buttons {
     height: 70px;
     width: 50%;
+    max-width: 600px;
+    min-width: 360px;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: black;
 }
 
