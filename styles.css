@@ -42,6 +42,12 @@ body {
     justify-content: space-around;
     background-color: black;
     box-shadow: 0px 0px 5px 0px black;
+    opacity: 25%;
+    transition: opacity 0.5s;
+}
+
+.navbar:hover {
+    opacity: 100%;
 }
 
 .main-buttons {
