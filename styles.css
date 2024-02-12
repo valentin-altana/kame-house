@@ -154,25 +154,33 @@ body {
 .ocean {
     height: 25%;
     width: 100%;
+    align-items: center;
     flex-direction: column;
 }
 
 .ocean-1 {
     height: 90%;
     width: 100%;
+    max-height: 142.65px;
+    min-height: 142.65px;
+    min-width: 1200px;
     justify-content: space-around;
     background-image: linear-gradient(0deg, rgba(0, 90, 200, 1) 0%, rgba(0, 115, 255, 1) 25%, rgba(255, 255, 255, 1) 100%);
 }
 
 .ocean-2 {
-    height: 10%;
+    height: 100%;
     width: 100%;
+    background-image:
+        linear-gradient(0deg, rgba(0, 90, 200, 0.5) 0%, rgba(0, 90, 200, 0.5) 100%),
+        linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 90, 200, 1) 100%);
+    background-size: 100% 100%, 100% 100%, 100% 100%;
 }
 
 /* ISLAND */
 
 .underwater {
-    height: 50%;
+    height: 60%;
     width: 57.5%;
     border-radius: 50%;
     top: 10%;
@@ -183,7 +191,7 @@ body {
 }
 
 .island {
-    height: 40%;
+    height: 50%;
     width: 50%;
     border-radius: 50%;
     top: 10%;
@@ -541,9 +549,9 @@ body {
 /* HOUSE */
 
 .house {
-    height: 340%;
+    height: 400%;
     width: 50%;
-    bottom: 60%;
+    bottom: 53%;
     justify-content: space-around;
 }
 
