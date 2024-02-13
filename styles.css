@@ -27,7 +27,7 @@ body {
 .main {
     height: 100%;
     width: 100%;
-    min-height: 634px;
+    min-height: 70px;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
