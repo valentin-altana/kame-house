@@ -438,6 +438,210 @@ body {
     background-size: 100% 100%, 100% 100%, 100% 100%;
 }
 
+/* PALM 1-1 TO 5-1 */
+
+.palm-1-1 {
+    animation: wind-2 15s ease-in-out infinite;
+}
+
+.palm-2-1 {
+    animation: wind-2 15.5s ease-in-out infinite;
+}
+
+.palm-3-1 {
+    animation: wind-2 16s ease-in-out infinite;
+}
+
+.palm-4-1 {
+    animation: wind-2 16.5s ease-in-out infinite;
+}
+
+.palm-5-1 {
+    animation: wind-2 17s ease-in-out infinite;
+}
+
+@keyframes wind-2 {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    10% {
+        transform: rotate(-6deg);
+    }
+
+    20% {
+        transform: rotate(8deg);
+    }
+
+    30% {
+        transform: rotate(-6deg);
+    }
+
+    40% {
+        transform: rotate(6deg);
+    }
+
+    50% {
+        transform: rotate(-6deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-8deg);
+    }
+
+    80% {
+        transform: rotate(8deg);
+    }
+
+    90% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(6deg);
+    }
+}
+
+/* PALM 1-2 TO 5-2 */
+
+.palm-1-2 {
+    animation: wind-3 17.5s ease-in-out infinite;
+}
+
+.palm-2-2 {
+    animation: wind-3 18s ease-in-out infinite;
+}
+
+.palm-3-2 {
+    animation: wind-3 18.5s ease-in-out infinite;
+}
+
+.palm-4-2 {
+    animation: wind-3 19s ease-in-out infinite;
+}
+
+.palm-5-2 {
+    animation: wind-3 19.5s ease-in-out infinite;
+}
+
+@keyframes wind-3 {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    10% {
+        transform: rotate(-6deg);
+    }
+
+    20% {
+        transform: rotate(8deg);
+    }
+
+    30% {
+        transform: rotate(-6deg);
+    }
+
+    40% {
+        transform: rotate(6deg);
+    }
+
+    50% {
+        transform: rotate(-6deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-8deg);
+    }
+
+    80% {
+        transform: rotate(8deg);
+    }
+
+    90% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(6deg);
+    }
+}
+
+/* PALM 1-3 TO 5-3 */
+
+.palm-1-3 {
+    animation: wind-4 20s ease-in-out infinite;
+}
+
+.palm-2-3 {
+    animation: wind-4 20.5s ease-in-out infinite;
+}
+
+.palm-3-3 {
+    animation: wind-4 21s ease-in-out infinite;
+}
+
+.palm-4-3 {
+    animation: wind-4 21.5s ease-in-out infinite;
+}
+
+.palm-5-3 {
+    animation: wind-4 22s ease-in-out infinite;
+}
+
+@keyframes wind-4 {
+    0% {
+        transform: rotate(6deg);
+    }
+
+    10% {
+        transform: rotate(-6deg);
+    }
+
+    20% {
+        transform: rotate(8deg);
+    }
+
+    30% {
+        transform: rotate(-6deg);
+    }
+
+    40% {
+        transform: rotate(6deg);
+    }
+
+    50% {
+        transform: rotate(-6deg);
+    }
+
+    60% {
+        transform: rotate(10deg);
+    }
+
+    70% {
+        transform: rotate(-8deg);
+    }
+
+    80% {
+        transform: rotate(8deg);
+    }
+
+    90% {
+        transform: rotate(-6deg);
+    }
+
+    100% {
+        transform: rotate(6deg);
+    }
+}
+
 /* BUSHES */
 
 .bush-1 {
