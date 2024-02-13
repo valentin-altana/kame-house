@@ -1271,10 +1271,10 @@ body {
 
 h1 {
     /* H1 */
-    height: 80%;
-    width: 60%;
-    bottom: 110%;
-    right: 2.75%;
+    height: 0%;
+    width: 0%;
+    bottom: 65%;
+    right: 38%;
     rotate: -20deg;
     /* TEXT */
     font-family: "Luckiest Guy", cursive;
@@ -1282,9 +1282,9 @@ h1 {
     font-weight: 400;
     font-size: 145%;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: rgb(255, 60, 60);
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1.5px black;
 }
 
 /* Z-INDEX */
