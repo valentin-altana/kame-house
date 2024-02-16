@@ -27,6 +27,7 @@ body {
 .main {
     height: 100%;
     width: 100%;
+    max-height: 634px;
     min-height: 70px;
     align-items: center;
     justify-content: space-evenly;
@@ -115,8 +116,9 @@ body {
     border-radius: 10px;
     top: 50%;
     left: 50%;
-    background-color: rgba(255, 255, 255, 0.75);
-    box-shadow: inset 0px 0px 50px 5px rgba(255, 255, 255, 2);
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.8);
     opacity: 0;
     display: none;
     transform: translate(-50%, -50%) scale(0);
@@ -145,6 +147,87 @@ body {
         opacity: 0;
         transform: translate(-50%, -50%) scale(0);
     }
+}
+
+.popup-content {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+h2 {
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 10px;
+    margin: 10px;
+    /* TEXT */
+    font-size: 24px;
+}
+
+/* CONTACT */
+
+.form-contact {
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.contact-labels {
+    color: black;
+    font-size: 16px;
+}
+
+.input-name,
+.input-email {
+    height: 20px;
+    width: 60%;
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 10px;
+    margin: 5px;
+    /* TEXT */
+    font-size: 12px;
+}
+
+.textarea-contact {
+    height: 200px;
+    width: 90%;
+    border-radius: 10px;
+    border: solid black 1px;
+    padding: 10px;
+    margin: 5px;
+    resize: none;
+    /* TEXT */
+    font-size: 12px;
+}
+
+.input-submit {
+    height: 40px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 5px;
+    margin-bottom: 10px;
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s;
+    /* TEXT */
+    font-size: 16px;
+}
+
+.input-submit:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.input-submit:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
 }
 
 /* DRAW */
@@ -1566,6 +1649,7 @@ body,
 .all,
 .main-draw,
 .main,
+.popup-content,
 .draw,
 .clouds,
 .cloud-1-1,
@@ -1683,6 +1767,14 @@ h1 {
 .main-buttons,
 .space,
 .popups,
+.popup-content,
+h2,
+.form-contact,
+.contact-labels,
+.input-name,
+.input-email,
+.textarea-contact,
+.input-submit,
 .draw,
 .sky,
 .clouds,
@@ -1781,4 +1873,10 @@ h1 {
 .shadow,
 h1 {
     display: flex;
+}
+
+/* FONT-FAMILY */
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
