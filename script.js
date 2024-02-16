@@ -20,6 +20,7 @@ function fadeOutAnimation(popup) {
 function togglePopup(popupId) {
     let currentPopup = document.getElementById(popupId);
     let popups = document.querySelectorAll('.popup');
+    let draw = document.querySelector('.draw');
 
     popups.forEach(function (item) {
         if (item !== currentPopup) {
@@ -29,12 +30,21 @@ function togglePopup(popupId) {
 
     if (currentPopup.style.display === 'flex') {
         fadeOutAnimation(currentPopup);
+        draw.classList.remove('blur');
+        draw.classList.add('unblur');
     } else {
         currentPopup.style.display = 'flex';
+        draw.classList.remove('unblur');
+        draw.classList.add('blur');
     }
 }
 
 function closeAllPopups() {
     let popups = document.querySelectorAll('.popup');
+    let draw = document.querySelector('.draw');
+
     popups.forEach(fadeOutAnimation);
+
+    draw.classList.remove('blur');
+    draw.classList.add('unblur');
 }

@@ -60,7 +60,7 @@ body {
 }
 
 .main-buttons:hover {
-    opacity: 80%;
+    opacity: 90%;
     box-shadow: 0px 0px 15px 0px black;
 }
 
@@ -118,7 +118,7 @@ body {
     left: 50%;
     align-items: center;
     justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     opacity: 0;
     display: none;
     transform: translate(-50%, -50%) scale(0);
@@ -237,6 +237,34 @@ h2 {
     width: 100%;
     align-items: center;
     flex-direction: column;
+}
+
+.draw.blur {
+    animation: blur 0.5s forwards;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0);
+    }
+
+    100% {
+        filter: blur(3px);
+    }
+}
+
+.draw.unblur {
+    animation: unblur 1s forwards;
+}
+
+@keyframes unblur {
+    0% {
+        filter: blur(3px);
+    }
+
+    100% {
+        filter: blur(0);
+    }
 }
 
 /* SKY */
