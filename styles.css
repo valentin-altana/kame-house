@@ -172,6 +172,38 @@ h3 {
     font-size: 20px;
 }
 
+/* PORTFOLIO and NETWORKS */
+
+.div-web-site {
+    height: 160px;
+    width: 160px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.web-site {
+    height: 145px;
+    width: 145px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    opacity: 25%;
+    transition:
+        height 0.5s,
+        width 0.5s,
+        box-shadow 0.5s,
+        opacity 0.5s;
+}
+
+.web-site:hover {
+    height: 160px;
+    width: 160px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    opacity: 100%;
+}
+
 /* CONTACT */
 
 .form-contact {
@@ -198,7 +230,7 @@ h3 {
 }
 
 .textarea-contact {
-    height: 200px;
+    height: 160px;
     width: 90%;
     border-radius: 10px;
     border: solid black 1px;
@@ -231,41 +263,6 @@ h3 {
 .input-submit:active {
     background-color: rgba(255, 255, 255, 0.5);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
-}
-
-/* NETWORKS */
-
-.div-linkedin,
-.div-github {
-    height: 160px;
-    width: 160px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.linkedin,
-.github {
-    height: 145px;
-    width: 145px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: space-around;
-    background-color: red;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    opacity: 25%;
-    transition:
-        height 0.5s,
-        width 0.5s,
-        box-shadow 0.5s,
-        opacity 0.5s;
-}
-
-.linkedin:hover,
-.github:hover {
-    height: 160px;
-    width: 160px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    opacity: 100%;
 }
 
 /* DRAW */
@@ -1834,16 +1831,14 @@ h1 {
 .space,
 .popups,
 .popup-content,
+.div-web-site,
+.web-site,
 .form-contact,
 .contact-labels,
 .input-name,
 .input-email,
 .textarea-contact,
 .input-submit,
-.div-linkedin,
-.linkedin,
-.div-github,
-.github,
 .draw,
 .sky,
 .clouds,
