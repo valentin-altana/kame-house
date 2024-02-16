@@ -153,7 +153,6 @@ body {
     height: 100%;
     width: 100%;
     align-items: center;
-    justify-content: space-between;
     flex-direction: column;
     overflow: scroll;
 }
@@ -162,9 +161,15 @@ h2 {
     border-radius: 10px;
     border: solid black 1px;
     padding: 10px;
-    margin: 10px;
+    margin: 15px;
     /* TEXT */
     font-size: 24px;
+}
+
+h3 {
+    margin: 10px;
+    /* TEXT */
+    font-size: 20px;
 }
 
 /* CONTACT */
@@ -176,7 +181,8 @@ h2 {
 }
 
 .contact-labels {
-    color: black;
+    margin: 10px;
+    /* TEXT */
     font-size: 16px;
 }
 
@@ -187,7 +193,6 @@ h2 {
     border-radius: 10px;
     border: solid black 1px;
     padding: 10px;
-    margin: 5px;
     /* TEXT */
     font-size: 12px;
 }
@@ -198,7 +203,6 @@ h2 {
     border-radius: 10px;
     border: solid black 1px;
     padding: 10px;
-    margin: 5px;
     resize: none;
     /* TEXT */
     font-size: 12px;
@@ -211,8 +215,7 @@ h2 {
     border: none;
     background-color: white;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-    margin-top: 5px;
-    margin-bottom: 10px;
+    margin: 10px;
     transition:
         background-color 0.3s,
         box-shadow 0.3s;
@@ -227,7 +230,42 @@ h2 {
 
 .input-submit:active {
     background-color: rgba(255, 255, 255, 0.5);
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+}
+
+/* NETWORKS */
+
+.div-linkedin,
+.div-github {
+    height: 160px;
+    width: 160px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.linkedin,
+.github {
+    height: 145px;
+    width: 145px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: red;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
+    opacity: 25%;
+    transition:
+        height 0.5s,
+        width 0.5s,
+        box-shadow 0.5s,
+        opacity 0.5s;
+}
+
+.linkedin:hover,
+.github:hover {
+    height: 160px;
+    width: 160px;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    opacity: 100%;
 }
 
 /* DRAW */
@@ -283,7 +321,7 @@ h2 {
     width: 100%;
     align-items: end;
     justify-content: space-between;
-    opacity: 60%;
+    opacity: 70%;
 }
 
 .cloud-1 {
@@ -292,7 +330,7 @@ h2 {
     max-height: 380.4px;
     max-width: 450px;
     min-height: 380.4px;
-    animation: wind-cloud-1 8s ease-in-out infinite;
+    animation: wind-cloud-1 16s ease-in-out infinite;
 }
 
 @keyframes wind-cloud-1 {
@@ -368,7 +406,7 @@ h2 {
     max-height: 380.4px;
     max-width: 450px;
     min-height: 380.4px;
-    animation: wind-cloud-2 10s ease-in-out infinite;
+    animation: wind-cloud-2 20s ease-in-out infinite;
 }
 
 @keyframes wind-cloud-2 {
@@ -1796,13 +1834,16 @@ h1 {
 .space,
 .popups,
 .popup-content,
-h2,
 .form-contact,
 .contact-labels,
 .input-name,
 .input-email,
 .textarea-contact,
 .input-submit,
+.div-linkedin,
+.linkedin,
+.div-github,
+.github,
 .draw,
 .sky,
 .clouds,
@@ -1899,7 +1940,9 @@ h2,
 .bedroom-2,
 .bedroom-3,
 .shadow,
-h1 {
+h1,
+h2,
+h3 {
     display: flex;
 }
 
@@ -1907,4 +1950,5 @@ h1 {
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
 }
