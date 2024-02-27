@@ -54,7 +54,7 @@ body {
     justify-content: space-evenly;
     background-color: black;
     opacity: 60%;
-    transition:
+    -webkit-transition:
         opacity 0.5s,
         box-shadow 0.5s;
 }
@@ -74,7 +74,7 @@ body {
     border: none;
     background-color: black;
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
-    transition:
+    -webkit-transition:
         background-color 0.15s,
         box-shadow 0.3s,
         text-shadow 0.15s;
@@ -196,7 +196,7 @@ a {
     justify-content: space-around;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
     opacity: 50%;
-    transition:
+    -webkit-transition:
         height 0.3s,
         width 0.3s,
         box-shadow 0.3s,
@@ -269,7 +269,7 @@ img {
     background-color: white;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
     margin: 10px;
-    transition:
+    -webkit-transition:
         background-color 0.3s,
         box-shadow 0.3s;
     /* TEXT */
