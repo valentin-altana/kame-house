@@ -51,13 +51,27 @@ function closeAllPopups() {
 
 // TRANSITIONS
 
-function isMobile() {
-    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+const elements = document.querySelectorAll('.main-buttons, .button, .web-site, .input-submit');
+
+function isMobileDevice() {
+    if (navigator.userAgent.match(/Android/i)
+        || navigator.userAgent.match(/BlackBerry/i)
+        || navigator.userAgent.match(/IEMobile/i)
+        || navigator.userAgent.match(/iPad/i)
+        || navigator.userAgent.match(/iPhone/i)
+        || navigator.userAgent.match(/iPod/i)
+        || navigator.userAgent.match(/Opera Mini/i)
+        || navigator.userAgent.match(/webOS/i)
+        || navigator.userAgent.match(/Windows Phone/i)
+    ) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
 
-const elements = document.querySelectorAll('.main-buttons', '.button', '.web-site', '.input-submit');
-
-if (isMobile()) {
+if (isMobileDevice() === true) {
     elements.forEach(function (elements) {
         elements.style.transition = 'none';
     });
