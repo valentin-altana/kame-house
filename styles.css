@@ -53,12 +53,15 @@ body {
     justify-content: space-evenly;
     background-color: black;
     opacity: 60%;
+}
+
+.main-buttons-hover-active {
     transition:
         opacity 0.5s,
         box-shadow 0.5s;
 }
 
-.main-buttons:hover {
+.main-buttons-hover-active:hover {
     opacity: 90%;
     box-shadow: 0px 0px 15px 0px black;
 }
@@ -73,21 +76,24 @@ body {
     border: none;
     background-color: black;
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
-    transition:
-        background-color 0.15s,
-        box-shadow 0.3s,
-        text-shadow 0.15s;
     /* TEXT */
     text-align: center;
     color: white;
 }
 
-.button:hover {
+.button-hover-active {
+    transition:
+        background-color 0.15s,
+        box-shadow 0.3s,
+        text-shadow 0.15s;
+}
+
+.button-hover-active:hover {
     background-color: rgba(255, 255, 255, 0.25);
     box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
 }
 
-.button:active {
+.button-hover-active:active {
     background-color: skyblue;
     box-shadow: 0px 0px 10px 10px skyblue;
     text-shadow: 0px 0px 5px white;
@@ -195,6 +201,9 @@ a {
     justify-content: space-around;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
     opacity: 50%;
+}
+
+.web-site-hover-active {
     transition:
         height 0.3s,
         width 0.3s,
@@ -202,14 +211,14 @@ a {
         opacity 0.3s;
 }
 
-.web-site:hover {
+.web-site-hover-active:hover {
     height: 160px;
     width: 160px;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     opacity: 100%;
 }
 
-.web-site:active {
+.web-site-hover-active:active {
     height: 145px;
     width: 145px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
@@ -270,19 +279,22 @@ img {
     background-color: white;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
     margin: 10px;
-    transition:
-        background-color 0.3s,
-        box-shadow 0.3s;
     /* TEXT */
     font-size: 16px;
 }
 
-.input-submit:hover {
+.input-submit-hover-active {
+    transition:
+        background-color 0.3s,
+        box-shadow 0.3s;
+}
+
+.input-submit-hover-active:hover {
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
 }
 
-.input-submit:active {
+.input-submit-hover-active:active {
     background-color: white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
 }

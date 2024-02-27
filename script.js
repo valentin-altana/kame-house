@@ -51,7 +51,13 @@ function closeAllPopups() {
 
 // TRANSITIONS
 
-const elements = document.querySelectorAll('.main-buttons, .button, .web-site, .input-submit');
+const mainButtonsTransition = document.querySelectorAll('.main-buttons');
+
+const buttonTransition = document.querySelectorAll('.button');
+
+const webSiteTransition = document.querySelectorAll('.web-site');
+
+const inputSubmitTransition = document.querySelectorAll('.input-submit');
 
 function isMobileDevice() {
     if (navigator.userAgent.match(/Android/i)
@@ -71,12 +77,30 @@ function isMobileDevice() {
     }
 }
 
-if (isMobileDevice() === true) {
-    elements.forEach(function (element) {
-        element.classList.add('disable-hover-active');
+if (isMobileDevice() === false) {
+    mainButtonsTransition.forEach(function (element) {
+        element.classList.add('main-buttons-hover-active');
+    });
+    buttonTransition.forEach(function (element) {
+        element.classList.add('button-hover-active');
+    });
+    webSiteTransition.forEach(function (element) {
+        element.classList.add('web-site-hover-active');
+    });
+    inputSubmitTransition.forEach(function (element) {
+        element.classList.add('input-submit-hover-active');
     });
 } else {
-    elements.forEach(function (element) {
-        element.classList.remove('disable-hover-active');
+    mainButtonsTransition.forEach(function (element) {
+        element.classList.remove('main-buttons-hover-active');
+    });
+    buttonTransition.forEach(function (element) {
+        element.classList.remove('button-hover-active');
+    });
+    webSiteTransition.forEach(function (element) {
+        element.classList.remove('web-site-hover-active');
+    });
+    inputSubmitTransition.forEach(function (element) {
+        element.classList.remove('input-submit-hover-active');
     });
 }
