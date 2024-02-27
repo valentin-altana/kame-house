@@ -48,3 +48,17 @@ function closeAllPopups() {
     draw.classList.remove('blur');
     draw.classList.add('unblur');
 }
+
+// TRANSITIONS
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
+const elements = document.querySelectorAll('.main-buttons', '.button', '.web-site', '.input-submit');
+
+if (isMobile()) {
+    elements.forEach(function (elements) {
+        elements.style.transition = 'none';
+    });
+}
