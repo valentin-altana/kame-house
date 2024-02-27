@@ -72,7 +72,11 @@ function isMobileDevice() {
 }
 
 if (isMobileDevice() === true) {
-    elements.forEach(function (elements) {
-        elements.style.transition = 'none';
+    elements.forEach(function (element) {
+        element.classList.add('disable-hover-active');
+    });
+} else {
+    elements.forEach(function (element) {
+        element.classList.remove('disable-hover-active');
     });
 }
