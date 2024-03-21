@@ -1,302 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     height: 100vh;
     width: 100vw;
     align-items: center;
     justify-content: center;
-}
-
-/* ALL */
-
-.all {
-    height: 100%;
-    width: 100%;
-    justify-content: center;
-}
-
-/* MAIN and DRAW */
-
-.main-draw {
-    height: 100%;
-    width: 100%;
     overflow: hidden;
-}
-
-/* MAIN */
-
-.main {
-    height: 100%;
-    width: 100%;
-    max-height: 634px;
-    min-height: 70px;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-/* NAVBAR */
-
-.navbar {
-    height: 70px;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.main-buttons {
-    height: 70px;
-    width: 95%;
-    max-width: 600px;
-    min-width: 345px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: black;
-    opacity: 60%;
-}
-
-.main-buttons-hover-active {
-    transition:
-        opacity 0.5s,
-        box-shadow 0.5s;
-}
-
-.main-buttons-hover-active:hover {
-    opacity: 90%;
-    box-shadow: 0px 0px 15px 0px black;
-}
-
-/* BUTTONS */
-
-.button {
-    /* BUTTON */
-    height: 40px;
-    width: 100px;
-    border-radius: 10px;
-    border: none;
-    background-color: black;
-    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
-    /* TEXT */
-    text-align: center;
-    color: white;
-}
-
-.button-hover-active {
-    transition:
-        background-color 0.15s,
-        box-shadow 0.3s,
-        text-shadow 0.15s;
-}
-
-.button-hover-active:hover {
-    background-color: rgba(255, 255, 255, 0.25);
-    box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 0.8);
-}
-
-.button-hover-active:active {
-    background-color: skyblue;
-    box-shadow: 0px 0px 10px 10px skyblue;
-    text-shadow: 0px 0px 5px white;
-}
-
-/* SPACE */
-
-.space {
-    height: 20px;
-    width: 100%;
-}
-
-/* POP-UPS */
-
-.popups {
-    height: 100%;
-    width: 95%;
-    max-width: 600px;
-    min-width: 345px;
-}
-
-.popup {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    top: 50%;
-    left: 50%;
-    align-items: center;
-    justify-content: space-around;
-    background-color: rgba(255, 255, 255, 0.9);
-    opacity: 0;
-    display: none;
-    transform: translate(-50%, -50%) scale(0);
-    animation: fadeInScale 0.5s forwards;
-}
-
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0);
-    }
-
-    to {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-}
-
-@keyframes fadeOutScale {
-    from {
-        opacity: 1;
-        transform: translate(-50%, -50%) scale(1);
-    }
-
-    to {
-        opacity: 0;
-        transform: translate(-50%, -50%) scale(0);
-    }
-}
-
-.popup-content {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-    flex-direction: column;
-    overflow: scroll;
-}
-
-h2 {
-    border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 10px;
-    margin: 15px;
-    /* TEXT */
-    font-size: 24px;
-    color: white;
-}
-
-h3 {
-    margin: 10px;
-    /* TEXT */
-    font-size: 20px;
-}
-
-a {
-    text-decoration: none;
-}
-
-/* PORTFOLIO and NETWORKS */
-
-.div-web-site {
-    height: 160px;
-    width: 160px;
-    min-height: 160px;
-    min-width: 160px;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.web-site {
-    height: 145px;
-    width: 145px;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-    opacity: 50%;
-}
-
-.web-site-hover-active {
-    transition:
-        height 0.3s,
-        width 0.3s,
-        box-shadow 0.3s,
-        opacity 0.3s;
-}
-
-.web-site-hover-active:hover {
-    height: 160px;
-    width: 160px;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    opacity: 100%;
-}
-
-.web-site-hover-active:active {
-    height: 145px;
-    width: 145px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
-    opacity: 100%;
-}
-
-img {
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    /* TEXT */
-    text-align: center;
-}
-
-/* CONTACT */
-
-.form-contact {
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-}
-
-.contact-labels {
-    margin: 10px;
-    /* TEXT */
-    font-size: 16px;
-}
-
-.input-name,
-.input-email {
-    height: 20px;
-    width: 60%;
-    border-radius: 10px;
-    border: solid black 1px;
-    padding: 10px;
-    /* TEXT */
-    font-size: 12px;
-}
-
-.textarea-contact {
-    height: 160px;
-    width: 90%;
-    border-radius: 10px;
-    border: solid black 1px;
-    padding: 10px;
-    resize: none;
-    /* TEXT */
-    font-size: 12px;
-}
-
-.input-submit {
-    height: 40px;
-    width: 30%;
-    border-radius: 10px;
-    border: none;
-    align-items: center;
-    justify-content: space-around;
-    background-color: white;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.8);
-    margin: 10px;
-    /* TEXT */
-    font-size: 16px;
-}
-
-.input-submit-hover-active {
-    transition:
-        background-color 0.3s,
-        box-shadow 0.3s;
-}
-
-.input-submit-hover-active:hover {
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-}
-
-.input-submit-hover-active:active {
-    background-color: white;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
 }
 
 /* DRAW */
@@ -306,34 +18,6 @@ img {
     width: 100%;
     align-items: center;
     flex-direction: column;
-}
-
-.draw.blur {
-    animation: blur 1s forwards;
-}
-
-@keyframes blur {
-    0% {
-        filter: blur(0);
-    }
-
-    100% {
-        filter: blur(3px);
-    }
-}
-
-.draw.unblur {
-    animation: unblur 1.5s forwards;
-}
-
-@keyframes unblur {
-    0% {
-        filter: blur(3px);
-    }
-
-    100% {
-        filter: blur(0);
-    }
 }
 
 /* SKY */
@@ -1637,7 +1321,7 @@ img {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
 }
 
-/* VALENTIN */
+/* VALENTIN ALTANA */
 
 h1 {
     /* H1 */
@@ -1661,7 +1345,6 @@ h1 {
 
 /* z-index: 1; */
 
-.navbar,
 .palm-5-1,
 .palm-5-2,
 .palm-5-3,
@@ -1732,21 +1415,11 @@ h1 {
     z-index: 5;
 }
 
-/* z-index: 6; */
-
-.main {
-    z-index: 6;
-}
-
 /* POSITIONS */
 
 /* ABSOLUTE */
 
 body,
-.all,
-.main-draw,
-.main,
-.popup-content,
 .draw,
 .clouds,
 .cloud-1-1,
@@ -1830,11 +1503,6 @@ body,
 
 /* RELATIVE */
 
-.navbar,
-.main-buttons,
-.space,
-.popups,
-.popup,
 .sky,
 .cloud-1,
 .cloud-1-a,
@@ -1857,22 +1525,6 @@ h1 {
 
 /* DISPLAY */
 
-.all,
-.main-draw,
-.main,
-.navbar,
-.main-buttons,
-.space,
-.popups,
-.popup-content,
-.div-web-site,
-.web-site,
-.form-contact,
-.contact-labels,
-.input-name,
-.input-email,
-.textarea-contact,
-.input-submit,
 .draw,
 .sky,
 .clouds,
@@ -1969,20 +1621,6 @@ h1 {
 .bedroom-2,
 .bedroom-3,
 .shadow,
-h1,
-h2,
-h3,
-img {
+h1 {
     display: flex;
-}
-
-/* FONT-FAMILY */
-
-* {
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    color: black;
-    margin: 0;
 }
